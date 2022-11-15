@@ -26,7 +26,6 @@ function checkForTakeOff(){
         flightScreen.style.backgroundColor ='blue';
         shuttleHeightNum += 10000;
         shuttleHeight.innerHTML = shuttleHeightNum;
-        // shuttleHeight.innerHTML += 10000;
         console.log("took off")
     } else {
         console.log("didn't take off")
@@ -110,6 +109,11 @@ function moveLeft(){
     rocket.style.left = rocketLeft+'px';
 }
 left.addEventListener("click", moveLeft)
+
+
+// Bonus Missions
+// Keep the rocket from flying off of the background.
+// Return the rocket to its original position on the background when it has been landed or the mission was aborted.
 
 
 })
